@@ -38,7 +38,7 @@ export default function Index() {
               <a href="#blog" className="text-slate-600 hover:text-primary transition-colors">Блог</a>
               <a href="#contact" className="text-slate-600 hover:text-primary transition-colors">Контакты</a>
             </div>
-            <Button>
+            <Button className="hover:scale-105 transition-transform duration-300">
               <Icon name="Phone" size={16} className="mr-2" />
               Связаться
             </Button>
@@ -47,7 +47,7 @@ export default function Index() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 px-4 sm:px-6 lg:px-8 animate-fade-in">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <Badge className="mb-4" variant="outline">
@@ -63,12 +63,12 @@ export default function Index() {
               Создаем эффективную оргструктуру, разрабатываем регламенты и помогаем в развитии вашей команды. 
               Превращаем хаос в систему, которая работает.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="px-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up [animation-delay:400ms]">
+              <Button size="lg" className="px-8 hover:scale-105 transition-transform duration-300">
                 <Icon name="Calendar" size={18} className="mr-2" />
                 Бесплатная консультация
               </Button>
-              <Button variant="outline" size="lg" className="px-8">
+              <Button variant="outline" size="lg" className="px-8 hover:scale-105 hover:bg-primary hover:text-white transition-all duration-300">
                 <Icon name="Play" size={18} className="mr-2" />
                 Посмотреть кейсы
               </Button>
@@ -78,7 +78,7 @@ export default function Index() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-8 bg-white animate-fade-in-up [animation-delay:200ms]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-sans text-3xl md:text-4xl font-bold text-slate-800 mb-4">
@@ -90,9 +90,9 @@ export default function Index() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:300ms]">
               <CardHeader className="text-center pb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 transition-colors hover:bg-primary/20">
                   <Icon name="Users" size={24} className="text-primary" />
                 </div>
                 <CardTitle className="text-lg">Оргструктура</CardTitle>
@@ -104,9 +104,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:400ms]">
               <CardHeader className="text-center pb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 transition-colors hover:bg-primary/20">
                   <Icon name="FileText" size={24} className="text-primary" />
                 </div>
                 <CardTitle className="text-lg">Регламенты</CardTitle>
@@ -118,9 +118,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:500ms]">
               <CardHeader className="text-center pb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 transition-colors hover:bg-primary/20">
                   <Icon name="TrendingUp" size={24} className="text-primary" />
                 </div>
                 <CardTitle className="text-lg">Развитие бизнеса</CardTitle>
@@ -132,9 +132,9 @@ export default function Index() {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:600ms]">
               <CardHeader className="text-center pb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 transition-colors hover:bg-primary/20">
                   <Icon name="Heart" size={24} className="text-primary" />
                 </div>
                 <CardTitle className="text-lg">HR-поддержка</CardTitle>
@@ -150,10 +150,10 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 animate-fade-in-up [animation-delay:700ms]">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="animate-slide-in-left [animation-delay:800ms]">
               <Badge className="mb-4" variant="secondary">
                 <Icon name="Target" size={14} className="mr-1" />
                 О компании
@@ -180,11 +180,11 @@ export default function Index() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative animate-slide-in-right [animation-delay:900ms]">
               <img 
                 src="/img/630607f3-3941-4320-b4ee-67fa90727d95.jpg" 
                 alt="Команда консультантов за работой"
-                className="aspect-square object-cover rounded-2xl shadow-lg"
+                className="aspect-square object-cover rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500"
               />
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function Index() {
       </section>
 
       {/* Methodology Section */}
-      <section id="methodology" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="methodology" className="py-20 px-4 sm:px-6 lg:px-8 bg-white animate-fade-in-up [animation-delay:1000ms]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-sans text-3xl md:text-4xl font-bold text-slate-800 mb-4">
@@ -204,8 +204,8 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+            <div className="text-center animate-scale-in [animation-delay:1100ms]">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4 hover:bg-primary/90 hover:scale-110 transition-all duration-300">
                 1
               </div>
               <h3 className="font-sans text-xl font-semibold text-slate-800 mb-3">Анализ</h3>
@@ -214,8 +214,8 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+            <div className="text-center animate-scale-in [animation-delay:1200ms]">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4 hover:bg-primary/90 hover:scale-110 transition-all duration-300">
                 2
               </div>
               <h3 className="font-sans text-xl font-semibold text-slate-800 mb-3">Проектирование</h3>
@@ -224,8 +224,8 @@ export default function Index() {
               </p>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4">
+            <div className="text-center animate-scale-in [animation-delay:1300ms]">
+              <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4 hover:bg-primary/90 hover:scale-110 transition-all duration-300">
                 3
               </div>
               <h3 className="font-sans text-xl font-semibold text-slate-800 mb-3">Внедрение</h3>
@@ -238,7 +238,7 @@ export default function Index() {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50">
+      <section id="blog" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-50 animate-fade-in-up [animation-delay:1400ms]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-sans text-3xl md:text-4xl font-bold text-slate-800 mb-4">
@@ -250,7 +250,7 @@ export default function Index() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:1500ms]">
               <CardHeader>
                 <Badge className="w-fit mb-2">Процессы</Badge>
                 <CardTitle className="text-lg">Как выстроить эффективную оргструктуру</CardTitle>
@@ -259,14 +259,14 @@ export default function Index() {
                 <CardDescription className="mb-4">
                   Пошаговое руководство по созданию организационной структуры, которая масштабируется...
                 </CardDescription>
-                <Button variant="ghost" className="p-0 h-auto">
+                <Button variant="ghost" className="p-0 h-auto hover:scale-105 transition-transform duration-300">
                   Читать далее
                   <Icon name="ArrowRight" size={16} className="ml-1" />
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:1600ms]">
               <CardHeader>
                 <Badge className="w-fit mb-2">HR</Badge>
                 <CardTitle className="text-lg">Мотивация команды в период изменений</CardTitle>
@@ -275,14 +275,14 @@ export default function Index() {
                 <CardDescription className="mb-4">
                   Практические инструменты для поддержания вовлеченности сотрудников...
                 </CardDescription>
-                <Button variant="ghost" className="p-0 h-auto">
+                <Button variant="ghost" className="p-0 h-auto hover:scale-105 transition-transform duration-300">
                   Читать далее
                   <Icon name="ArrowRight" size={16} className="ml-1" />
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow duration-300">
+            <Card className="hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-scale-in [animation-delay:1700ms]">
               <CardHeader>
                 <Badge className="w-fit mb-2">Стратегия</Badge>
                 <CardTitle className="text-lg">5 ошибок при масштабировании бизнеса</CardTitle>
@@ -291,7 +291,7 @@ export default function Index() {
                 <CardDescription className="mb-4">
                   Типичные проблемы растущих компаний и способы их предотвращения...
                 </CardDescription>
-                <Button variant="ghost" className="p-0 h-auto">
+                <Button variant="ghost" className="p-0 h-auto hover:scale-105 transition-transform duration-300">
                   Читать далее
                   <Icon name="ArrowRight" size={16} className="ml-1" />
                 </Button>
@@ -302,7 +302,7 @@ export default function Index() {
       </section>
 
       {/* Contact Form Section */}
-      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white animate-fade-in-up [animation-delay:1800ms]">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="font-sans text-3xl md:text-4xl font-bold text-slate-800 mb-4">
@@ -313,7 +313,7 @@ export default function Index() {
             </p>
           </div>
 
-          <Card className="border-2 border-primary/10">
+          <Card className="border-2 border-primary/10 animate-scale-in [animation-delay:1900ms]">
             <CardContent className="p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -368,7 +368,7 @@ export default function Index() {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full">
+                <Button type="submit" size="lg" className="w-full hover:scale-105 transition-all duration-300">
                   <Icon name="Send" size={18} className="mr-2" />
                   Отправить заявку
                 </Button>
